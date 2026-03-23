@@ -1,0 +1,14 @@
+name: snake
+description: Pure Dart Snake game logic shared between Jaspr and Flutter Web.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  meta: ^1.16.0
+
+dev_dependencies:
+  test: ^1.25.0
+  very_good_analysis: ^7.0.0

@@ -1,0 +1,36 @@
+name: jaspr_server_example
+description: >-
+  A Jaspr demo using server mode. The page is rendered fresh on every
+  request, so the server timestamp reflects the actual request time.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  jaspr: ^0.22.3
+  jaspr_flutter_embed: ^0.4.10
+  jaspr_snake:
+    path: ../jaspr_snake
+  jaspr_time:
+    path: ../jaspr_time
+  snake:
+    path: ../snake
+  universal_web: ^1.1.1
+
+flutter:
+  uses-material-design: true
+
+dev_dependencies:
+  build_runner: ^2.10.0
+  build_web_compilers: ^4.4.15
+  jaspr_builder: ^0.22.3
+  very_good_analysis: ^7.0.0
+
+jaspr:
+  mode: server
+  port: 3002
+  flutter: embedded

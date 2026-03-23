@@ -1,0 +1,26 @@
+name: jaspr_client_example
+description: >-
+  A Jaspr demo showing how rendering modes affect time display.
+  Server-rendered timestamps stay frozen; @client components update live.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  jaspr: ^0.22.3
+  jaspr_snake:
+    path: ../jaspr_snake
+  jaspr_time:
+    path: ../jaspr_time
+
+dev_dependencies:
+  build_runner: ^2.10.0
+  build_web_compilers: ^4.4.15
+  jaspr_builder: ^0.22.3
+  very_good_analysis: ^7.0.0
+
+jaspr:
+  mode: client
+  port: 3001

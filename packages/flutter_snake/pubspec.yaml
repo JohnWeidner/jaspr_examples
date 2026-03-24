@@ -1,0 +1,21 @@
+name: flutter_snake
+description: Flutter Web frontend for the shared Snake game logic.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  snake:
+    path: ../snake
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^7.0.0
+
+flutter:
+  uses-material-design: true

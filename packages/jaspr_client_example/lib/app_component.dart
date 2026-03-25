@@ -14,23 +14,17 @@ class AppComponent extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return const div(
-      [
-        h1([Component.text('Jaspr Time')]),
-        p(
-          [
-            Component.text(
-              'A demo of Jaspr client mode \u2014 everything runs '
-              'entirely in the browser, no server required.',
-            ),
-          ],
-          classes: 'subtitle',
+    return const div([
+      h1([Component.text('Jaspr Client Mode Example')]),
+      p([
+        Component.text(
+          'A demo of Jaspr client mode \u2014 everything runs '
+          'entirely in the browser, no server required.',
         ),
-        LiveClock(),
-        hr(),
-        ClientSnakeComponent(),
-      ],
-      classes: 'app',
-    );
+      ], classes: 'subtitle'),
+      LiveClock(),
+      hr(),
+      ClientSnakeComponent(),
+    ], classes: 'app');
   }
 }

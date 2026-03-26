@@ -1,6 +1,7 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_snake/client_snake_component.dart';
+import 'package:jaspr_snake/snake_component.dart';
 import 'package:jaspr_time/jaspr_time.dart';
 
 /// The top-level app layout for client mode.
@@ -24,7 +25,7 @@ class AppComponent extends StatelessComponent {
       ], classes: 'subtitle'),
       LiveClock(),
       hr(),
-      ClientSnakeComponent(),
+      SnakeComponent(),
     ], classes: 'app');
   }
 }

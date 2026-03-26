@@ -66,7 +66,7 @@ void main() {
 
   runApp(
     const Document(
-      title: 'Jaspr Time \u2014 Server Mode',
+      title: 'Jaspr Server',
       head: [
         Component.element(
           tag: 'link',

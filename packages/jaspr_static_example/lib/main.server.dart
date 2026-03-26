@@ -18,7 +18,7 @@ void main() {
 
   runApp(
     const Document(
-      title: 'Jaspr Time',
+      title: 'Jaspr Static',
       head: [
         Component.element(
           tag: 'link',
